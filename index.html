@@ -8,6 +8,12 @@
     <script src=""></script>
     <!--Font awesome  -->
     <script src="https://kit.fontawesome.com/09de26536d.js" crossorigin="anonymous"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -24,9 +30,46 @@
         </div>
     </nav>
     <section class="video">
-
+        <video controls src="video/01.mp4"></video>
     </section>
-    <section class="info"></section>
-    <section class="UpNext"></section>
+    <section class="info">
+        <div class="metadata">
+            <div class="metadata_title">title</div>
+            <span class="views">14k, 3years ago</span>
+        </div>
+        <ul class="actions">
+            <li id="like"><button><i class="far fa-thumbs-up"></i></button></li>
+            <li id="dislike"><button><i class="far fa-thumbs-down"></i></button></li>
+            <li id="share"><button><i class="far fa-share-square"></i></button></li>
+            <li id="download"><button><i class="far fa-arrow-alt-circle-down"></i></button></li>
+            <li id="add"><button><i class="far fa-plus-square"></i></button></li>
+        </ul>
+        <div class="channelInfo">
+            <div class="channel">
+                <a href="http://#"><img src="images/myAvatar.png" alt="myAvatar"></a>
+                <span id="channel_name">Naraland</span>
+                <span id="channel_subscribers">1M</span>
+            </div>
+            <div class="subscribe">
+                <button id="subscribe_btn">subscribed</button>
+                <button id="subscribe_alarmOn"><i class="far fa-bell"></i></button>
+                <button id="subscribe_alarmOff"><i class="far fa-bell-slash"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="UpNext">
+        <ul class="upNext_list">
+            <li class="upNext_item">
+                <a href="#"">
+                    <img id="upNext_thumbnail" src="images/01.png" alt="">
+                    <div id="upNext_channel">
+                        <img src="images/myAvatar.png" alt="">
+                        <span>title</span>
+                        <span>channel name, views, 1year ago</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
