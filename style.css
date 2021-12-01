@@ -1,0 +1,80 @@
+/* font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+  /* Color */
+  --dark-grey: #212121;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Font size */
+  --small: 11px;
+  --regular: 14px;
+  --large: 17px;
+
+  /* Space */
+  --padding-top: 5px;
+  --padding-side: 11px;
+  --margin-top: 5px;
+  --margin-side: 11px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: var(--padding-side);
+  padding-left: var(--padding-side);
+  font-size: var(--large);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+#logo_img {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 4px;
+}
+
+.search_input {
+  border: none;
+  background-color: var(--black);
+  height: 2em;
+  padding-left: var(--padding-side);
+}
+
+.search_btn {
+  font-size: var(--large);
+  border: none;
+  padding: 5px;
+}
+
+/* Video */
+.videoArea {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
