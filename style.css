@@ -38,6 +38,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -74,11 +78,16 @@ button {
 
 /* Video */
 .videoArea {
-  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  position: sticky;
   top: 0;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
+  width: 100vw;
+  aspect-ratio: 16 / 9;
+  max-width: 1000px;
 }
 video {
   position: absolute;
@@ -215,4 +224,29 @@ video {
 #upNext_avatar {
   width: 2em;
   padding: var(--padding-top);
+}
+
+@media screen and (min-width: 768px) {
+  .videoArea {
+    position: relative;
+  }
+  .infoAndUpNext {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .info {
+    margin-left: var(--margin-side);
+    margin-right: var(--margin-side);
+    flex: 1 1 65%;
+  }
+
+  .UpNext {
+    margin: var(--margin-side);
+    flex: 1 1 35%;
+  }
+  #upNext_channel {
+    margin: 0;
+  }
 }

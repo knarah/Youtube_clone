@@ -28,56 +28,61 @@
         </div>     
     </nav>
     <section class="videoArea">
-        <video controls width=src="video/01.mp4">
-            <source src="video/01.mp4" type="video/mp4">
-            Your browser does not support this video.
-        </video>
-    </section>
-    <section class="info">
-        <div class="metadata">
-            <div id="metadata_titleAndBtn">
-                <span id="metadata_title">title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이 title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이
-                    title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이
-                    title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이
-                </span>
-                <button id="moreBtn"><i class="fas fa-caret-down"></i></button> 
-           </div> 
-            
-            <div id="views">14k, 3years ago</div>
-        </div>
-        <ul class="actions">
-            <li id="like"><button><i class="far fa-thumbs-up"></i></button><span>2k</span></li>
-            <li id="dislike"><button><i class="far fa-thumbs-down"></i></button><span>Dislike</span></li>
-            <li id="share"><button><i class="far fa-share-square"></i></button><span>share</span></li>
-            <li id="download"><button><i class="far fa-arrow-alt-circle-down"></i></button><span>Download</span></li>
-            <li id="add"><button><i class="far fa-plus-square"></i></button><span>Save</span></li>
-        </ul>      
-        <div class="channelInfo">
-            <div class="channel">
-                <a href="http://#"><img id="channel_avatar" src="images/myAvatar.png" alt="myAvatar"></a>
-                <span id="channel_name">Naraland</br><span>1M</span></span>
-                <!-- <span id="channel_subscribers">1M</span> -->
-            </div>
-            <div class="subscribe">
-                <button id="subscribe_btn">subscribed</button>
-                <button id="subscribe_alarmOn"><i class="far fa-bell"></i></button>
-                <button id="subscribe_alarmOff"><i class="far fa-bell-slash"></i></button>
-            </div>
+        <div class="player">
+            <video controls autoplay src="video/01.mp4">
+                <source src="video/01.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
         </div>
     </section>
-    <section class="UpNext">
-        <ul class="upNext_list">
-            <li class="upNext_item">
-                <a href="#"">
-                    <img id="upNext_thumbnail" src="images/01.png" alt="">
-                    <div id="upNext_channel">
-                        <img id="upNext_avatar" src="images/myAvatar.png" alt="">
-                        <span id="UpNext_title">title</br>
-                        <span>channel name, views, 1year ago</span></span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </section>
+    <div class="infoAndUpNext">
+        <section class="info">
+            <div class="metadata">
+                <div id="metadata_titleAndBtn">
+                    <span id="metadata_title">title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이 title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이
+                        title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이
+                        title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이title 고양이 금순이 귀여워 깜찍 뚱냥이 뚱땡이
+                    </span>
+                    <button id="moreBtn"><i class="fas fa-caret-down"></i></button> 
+               </div> 
+                
+                <div id="views">14k, 3years ago</div>
+            </div>
+            <ul class="actions">
+                <li id="like"><button><i class="far fa-thumbs-up"></i></button><span>2k</span></li>
+                <li id="dislike"><button><i class="far fa-thumbs-down"></i></button><span>Dislike</span></li>
+                <li id="share"><button><i class="far fa-share-square"></i></button><span>share</span></li>
+                <li id="download"><button><i class="far fa-arrow-alt-circle-down"></i></button><span>Download</span></li>
+                <li id="add"><button><i class="far fa-plus-square"></i></button><span>Save</span></li>
+            </ul>      
+            <div class="channelInfo">
+                <div class="channel">
+                    <a href="http://#"><img id="channel_avatar" src="images/myAvatar.png" alt="myAvatar"></a>
+                    <span id="channel_name">Naraland</br><span>1M</span></span>
+                    <!-- <span id="channel_subscribers">1M</span> -->
+                </div>
+                <div class="subscribe">
+                    <button id="subscribe_btn">subscribed</button>
+                    <button id="subscribe_alarmOn"><i class="far fa-bell"></i></button>
+                    <button id="subscribe_alarmOff"><i class="far fa-bell-slash"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="UpNext">
+            <ul class="upNext_list">
+                <li class="upNext_item">
+                    <a href="#"">
+                        <img id="upNext_thumbnail" src="images/01.png" alt="">
+                        <div id="upNext_channel">
+                            <img id="upNext_avatar" src="images/myAvatar.png" alt="">
+                            <span id="UpNext_title">title</br>
+                            <span>channel name, views, 1year ago</span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    
 </body>
 </html>
