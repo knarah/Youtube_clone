@@ -31,6 +31,11 @@ font-family: 'Roboto', sans-serif; */
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .navbar {
@@ -70,6 +75,7 @@ a {
 /* Video */
 .videoArea {
   position: relative;
+  top: 0;
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
@@ -88,15 +94,30 @@ video {
   display: flex;
   flex-direction: column;
 }
+.metadata {
+  display: flex;
+  flex-direction: column;
+}
 
-#metadata_title {
+#metadata_titleAndBtn {
+  display: flex;
   margin: var(--margin-top) var(--margin-side) 0;
-  font-family: "Outfit", sans-serif;
+
   font-size: var(--regular);
+}
+#metadata_title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+#moreBtn {
+  height: 100%;
+  border: none;
 }
 
 #views {
-  margin-left: var(--margin-side);
+  margin: var(--margin-top) var(--margin-side);
   font-size: var(--small);
   color: var(--light-grey);
 }
@@ -157,18 +178,41 @@ video {
 
 .subscribe > button {
   font-size: var(--regular);
+  color: var(--light-grey);
   border: none;
   padding: var(--padding-top) var(--padding-side);
 }
 
 #subscribe_btn {
   text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+}
+
+.upNext_item {
+  /* display: flex; */
 }
 
 #upNext_thumbnail {
   width: 100%;
 }
 
+#upNext_channel {
+  display: inline-flex;
+  align-items: center;
+  margin-top: var(--margin-top);
+  margin-left: var(--margin-side);
+}
+
+#UpNext_title {
+  font-size: var(--regular);
+}
+
+#UpNext_title > span {
+  font-size: var(--small);
+  color: var(--light-grey);
+}
+
 #upNext_avatar {
-  width: ;
+  width: 2em;
+  padding: var(--padding-top);
 }
