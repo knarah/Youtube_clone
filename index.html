@@ -33,23 +33,24 @@
             Your browser does not support this video.
         </video>
     </section>
-    <section class="info">
+    <div class="info">
         <div class="metadata">
-            <div class="metadata_title">title</div>
-            <span class="views">14k, 3years ago</span>
+            <div id="metadata_title">title</div>
+            <span id="views">14k, 3years ago</span>
         </div>
         <ul class="actions">
-            <li id="like"><button><i class="far fa-thumbs-up"></i></button></li>
-            <li id="dislike"><button><i class="far fa-thumbs-down"></i></button></li>
-            <li id="share"><button><i class="far fa-share-square"></i></button></li>
-            <li id="download"><button><i class="far fa-arrow-alt-circle-down"></i></button></li>
-            <li id="add"><button><i class="far fa-plus-square"></i></button></li>
-        </ul>
+            <li id="like"><button><i class="far fa-thumbs-up"></i></button><span>2k</span></li>
+            <li id="dislike"><button><i class="far fa-thumbs-down"></i></button><span>Dislike</span></li>
+            <li id="share"><button><i class="far fa-share-square"></i></button><span>share</span></li>
+            <li id="download"><button><i class="far fa-arrow-alt-circle-down"></i></button><span>Download</span></li>
+            <li id="add"><button><i class="far fa-plus-square"></i></button><span>Save</span></li>
+        </ul>      
+        <div id="divider"></div>  
         <div class="channelInfo">
             <div class="channel">
-                <a href="http://#"><img src="images/myAvatar.png" alt="myAvatar"></a>
-                <span id="channel_name">Naraland</span>
-                <span id="channel_subscribers">1M</span>
+                <a href="http://#"><img id="channel_avatar" src="images/myAvatar.png" alt="myAvatar"></a>
+                <span id="channel_name">Naraland,</br><span>1M</span></span>
+                <!-- <span id="channel_subscribers">1M</span> -->
             </div>
             <div class="subscribe">
                 <button id="subscribe_btn">subscribed</button>
